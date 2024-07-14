@@ -42,3 +42,17 @@ function cycle(dir, arr, cur) {
     null :
     arr[(indexOfCur + dir + arr.length) % arr.length];
 }
+
+// or
+
+function cycle(dir, arr, cur) {
+	let pos = arr.indexOf(cur);
+  if(pos < 0) return null;
+  if(dir > 0) {
+    if(arr.length <= ++pos) return arr[0];
+    else return arr[pos];
+  } else {
+    if(--pos < 0) return arr[arr.length - 1];
+    else return arr[pos];
+  }
+}
