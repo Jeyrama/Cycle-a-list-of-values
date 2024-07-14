@@ -35,3 +35,10 @@ Examples:
 
 
 // Solution
+
+function cycle(dir, arr, cur) {
+  let indexOfCur = arr.indexOf(cur);
+  return indexOfCur < 0 ?
+    null :
+    arr[(indexOfCur + dir + arr.length) % arr.length];
+}
