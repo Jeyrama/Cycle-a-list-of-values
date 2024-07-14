@@ -32,3 +32,6 @@ Examples:
   cycle(1, [1,2,2,3], 2) // => 2
   // Corner case: multiple instances of given value, picks next relative to first occurrence
 */
+
+
+// Solution
